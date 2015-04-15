@@ -1,0 +1,48 @@
+svg .land {
+    stroke-width: 1;
+    stroke: #FFF;
+    transition: all 0.2s ease-in-out;
+}
+svg .land:hover , .land.active {
+    cursor: pointer;
+    stroke-width: 1;
+    stroke: #444;
+	z-index:99;
+	position: relative;
+	fill: orange;
+}
+
+.regionlist {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+}
+.regionlist > div {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+.regionlist > div.active {
+    font-weight: bold;
+    background-color: orange;
+	color: #FFF;
+}
+
+.regionlist > div > div {
+    display: inline-block;
+    width: 48%;
+}
+
+.scale {
+    position: relative;
+}
+.scale div {
+    width: 9.07%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+}

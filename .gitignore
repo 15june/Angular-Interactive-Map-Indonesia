@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+app/bower_components
+
+# Build files
+dist
+
+.DS_Store

@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12">
+
+        <h1 class="text-center">Angular Interactive Map Indonesia</h1>
+
+        <hr>
+
+        <div svg-map></div>
+        <div class="scale">
+            <div ng-repeat="n in [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]"
+                 ng-style="{backgroundColor:'{{n | map_colour}}'}">{{n}}
+            </div>
+        </div>
+
+        <div class="regionlist">
+            <div ng-repeat="(key,region) in dummyData"
+                 ng-class="{active:hoverRegion==key}"
+                 ng-mouseover="changeHoverRegion(key)">
+                <div>{{key}}</div>
+                <div>{{region.value | number}}</div>
+            </div>
+        </div>
+
+        <p><button ng-click="createDummyData()" class="btn btn-default">Create Dummy Data</button></p>
+
+    </div>
+</div>
