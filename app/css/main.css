@@ -1,3 +1,7 @@
+body {
+    background-color: #F1F1F1;
+}
+
 svg .land {
     stroke-width: 1;
     stroke: #FFF;
@@ -6,16 +10,17 @@ svg .land {
 svg .land:hover , .land.active {
     cursor: pointer;
     stroke-width: 1;
-    stroke: #444;
+    stroke: #FFF;
 	z-index:99;
 	position: relative;
-	fill: orange;
+	fill: #4A90E2;
 }
 
 .regionlist {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    margin-bottom: 15px;
 }
 .regionlist > div {
     display: inline-block;
@@ -23,11 +28,11 @@ svg .land:hover , .land.active {
     border-bottom: 1px solid #CCC;
 	padding: 5px 10px;
 	font-size: 12px;
+    transition: all 0.2s ease-in-out;
 }
 
 .regionlist > div.active {
-    font-weight: bold;
-    background-color: orange;
+    background-color: #4A90E2;
 	color: #FFF;
 }
 
@@ -45,4 +50,8 @@ svg .land:hover , .land.active {
     text-align: center;
     font-weight: bold;
     padding: 5px 0;
+}
+
+btn {
+    margin-bottom: 15px;
 }
