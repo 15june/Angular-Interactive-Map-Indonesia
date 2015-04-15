@@ -22,7 +22,7 @@
     angular.module('angular-interactive-map-indonesia').controller('MainController', ['$scope',function($scope) {
 
         $scope.test = "Testing...";
-        var states = ['ID-AC', 'ID-BA', 'ID-BB', 'ID-BE', 'ID-BT', 'ID-GO', 'ID-JA', 'ID-JB', 'ID-JI', 'ID-JK', 'ID-JT', 'ID-KB', 'ID-KI', 'ID-KR', 'ID-KS', 'ID-KT', 'ID-KU', 'ID-LA', 'ID-MA', 'ID-MU', 'ID-NB', 'ID-NT', 'ID-PA', 'ID-PB', 'ID-RI', 'ID-SA', 'ID-SB', 'ID-SG', 'ID-SN', 'ID-SR', 'ID-SS', 'ID-ST', 'ID-SU', 'ID-YO'];
+        var states = ['Aceh', 'Bali', 'Bangka Belitung', 'Bengkulu', 'Banten', 'Gorontalo', 'Jambi', 'Jawa Barat', 'Jawa Timur', 'Jakarta Raya', 'Jawa Tengah', 'Kalimantan Barat', 'Kalimantan Timur', 'Kepulauan Riau', 'Kalimantan Selatan', 'Kalimantan Tengah', 'Kalimantan Utara', 'Lampung', 'Maluku', 'Maluku Utara', 'Nusa Tenggara Barat', 'Nusa Tenggara Timur', 'Papua', 'Papua Barat', 'Riau', 'Sulawesi Utara', 'Sumatera Barat', 'Sulawesi Tenggara', 'Sulawesi Selatan', 'Sulawesi Barat', 'Sumatera Selatan', 'Sulawesi Tengah', 'Sumatera Utara', 'Yogyakarta'];
         $scope.createDummyData = function () {
             var dataTemp = {};
             angular.forEach(states, function (state, key) {
